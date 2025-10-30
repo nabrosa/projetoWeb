@@ -1,0 +1,18 @@
+name: Projeto Web
+
+on:
+  workflow_dispatch:
+
+jobs:
+  web-tests: 
+
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Execução dos testes
+        run: npx cypress run
