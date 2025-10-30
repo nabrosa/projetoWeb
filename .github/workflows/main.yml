@@ -17,8 +17,9 @@ jobs:
       - name: Execução dos testes
         run: npx cypress run
       
-      - uses: actions/upload-artifact@v4
-        if ${{ !cancelled() }}
+      - name: Upload dos relatórios
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
         with:
           name: relatorios
           path: cypress/reports
