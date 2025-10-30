@@ -1,0 +1,8 @@
+{
+  "nameUser": "QA Tester",
+  "password": "123456",
+  "firstName": "Fulana",
+  "lastName": "Silva",
+  "emailExistente": "qa-tester-0412871@test.com",
+  "emailInexistente": "qa-tester-invalido@test.com"
+}
